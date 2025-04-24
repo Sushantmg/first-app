@@ -1,10 +1,20 @@
+import Header from "./Header";
+import { Welcome } from "./Welcome";
+import Info from "./Info";
+import Footer from "./Footer";
+import Name from "./Name";
+
 export  function Card(props){
+    const { husband, wife, invitation } = props;
     return (
         <div className="card">
-            <h2>ID CARD</h2>
-            <p>Name:{props.name}</p>
-            <p>Roll:{props.roll}</p>
-            <p>Address:{props.address}</p>
+            <Header />
+            <Name h={husband} w={wife} />
+            <h1>WELCOME</h1>
+         <Welcome />
+         <Info inv={invitation} />
+         <Footer />
         </div>
     );
   }
+  
