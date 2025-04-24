@@ -6,7 +6,7 @@ export const Welcome = () => {
 
 
   return (
-    <div>
+    <div className='dv'>
         <Mdate date="2025/06/17" />
         <Venue venue="Mahandra Gufa" />
 
